@@ -12,7 +12,7 @@ const App = () => {
     { id: 3, text: '설빙 먹기', checked: false },
   ]); //todos 배열 안에 들어있는 객체에 고유 id, 내용 text, 완료 여부 checked 값이 있다.
   //이 배열은 TodoList.js에 props로 전달될 것이다.
-  const nextId = useRef(2501);
+  const nextId = useRef(4);
   //고윳값으로 사용될 ID
   //Ref를 사용하여 변수 담기
   const onInsert = useCallback(
