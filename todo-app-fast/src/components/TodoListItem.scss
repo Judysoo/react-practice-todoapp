@@ -1,3 +1,12 @@
+.TodoListItem-virtualized {
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+  &:nth-child(even) {
+    background: #d8f09a;
+  }
+}
+
 .TodoListItem {
   padding: 1rem;
   display: flex;
@@ -41,11 +50,5 @@
       //user action 가상 클래스. 커서 올리면 스타일 변화!
       color: #dd1150;
     }
-  }
-
-  //엘리먼트 사이사이에 테두리를 넣어 줌, SCSS 요소
-  & + & {
-    // = .tab + .tab {    } 항목 사이에 경계를 추가해야 할 때 일반적으로 사용함
-    border-top: 1px solid #dee2e6;
   }
 }
