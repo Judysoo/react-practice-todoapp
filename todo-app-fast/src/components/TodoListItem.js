@@ -12,8 +12,9 @@ Todo 객체를 props로 받아 와서 상태에 따라 다른 스타일의 UI를
 
 const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
   const { id, text, checked } = todo;
+
   return (
-    <div className="todoListItem-virtualized" style={style}>
+    <div className="TodoListItem-virtualized" style={style}>
       <div className="TodoListItem">
         <div
           className={cn('checkbox', { checked })}
